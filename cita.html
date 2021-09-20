@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>OdontoCentro Berlioz</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            transition: all 1s ease;
+        }
+        body{
+            background-color: #89ceff;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .titulo{
+            background-color: #00487c;
+            width:100%;
+            height: 20vh;
+            padding: 15px;
+            color: white;
+        }
+        .nombre{
+            font-size: 2.2em;
+            width: 80%;
+            display: inline-block;
+        }
+        .logo{
+            width: 10%;
+            height: 100%;
+            display: inline-block;
+        }
+        .titulo img{
+            width: 100%;
+            height: auto;
+        }
+        h1{
+            font-weight:bold;     
+        }
+        h2{
+            font-weight:bold;
+        }
+        h3{
+            font-weight:bold;
+            color: white;
+        }
+        p{
+            color: white;
+            font-size:1.2em;
+        }
+        div[class*="div"]{
+            text-align: center;
+            padding:20px;
+            width:100%;
+        }
+        .container{ 
+            padding:0;
+            background-color: #1787e4;
+            margin: 10px;
+        }
+        [class*='col-']{
+          float:left;
+          padding: 15px;      
+        }
+        .row::after{
+          content: '';
+          display: table;
+          clear: both;
+        }
+        .col-g-1{width: 8.33%;}
+        .col-g-2{width: 16.66%;}
+        .col-g-3{width: 25%;}
+        .col-g-4{width: 33.33%;}
+        .col-g-5{width: 41.66%;}
+        .col-g-6{width: 50%;}
+        .col-g-7{width: 58.33%;}
+        .col-g-8{width: 66.66%;}
+        .col-g-9{width: 75%;}
+        .col-g-10{width: 83.33%;}
+        .col-g-11{width: 91.66%;}
+        .col-g-12{width: 100%;}
+        @media only screen and (max-width:432px){
+            h1{
+                font-size:1.1em; 
+            }
+            .col-1{width: 8.33%;}
+            .col-2{width: 16.66%;}
+            .col-3{width: 25%;}
+            .col-4{width: 33.33%;}
+            .col-5{width: 41.66%;}
+            .col-6{width: 50%;}
+            .col-7{width: 58.33%;}
+            .col-8{width: 66.66%;}
+            .col-9{width: 75%;}
+            .col-10{width: 83.33%;}
+            .col-11{width: 91.66%;}
+            .col-12{width: 100%;}
+        }
+        @media only screen and (max-width:768px){
+            h1{
+                font-size:1.1em; 
+            }
+            .container{ 
+                margin: 0;
+            }
+            .col-m-1{width: 8.33%;}
+            .col-m-2{width: 16.66%;}
+            .col-m-3{width: 25%;}
+            .col-m-4{width: 33.33%;}
+            .col-m-5{width: 41.66%;}
+            .col-m-6{width: 50%;}
+            .col-m-7{width: 58.33%;}
+            .col-m-8{width: 66.66%;}
+            .col-m-9{width: 75%;}
+            .col-m-10{width: 83.33%;}
+            .col-m-11{width: 91.66%;}
+            .col-m-12{width: 100%;}     
+        }
+        input, textarea{
+            width: 100%;
+        }
+        input[type=text],input[type=email], textarea{
+            background-color: transparent;
+            border:none;
+            outline:none;
+            color:white;
+            border-bottom: 2px solid #00487c;
+            padding:10px 10px;
+            font-size: 1.3em;
+        }
+        input[type=submit] {
+            background-color:#00487c ;
+            color:white;
+            padding:10px 10px;
+            text-transform: uppercase;
+            border:none;
+            outline: none;
+            cursor:pointer;
+        }
+        input[type=submit]:hover{
+            background-color:#012844 ;
+        }
+        .info{
+            background-color: #012844;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <div class="logo"><a href="index.html"><img src="https://i.ibb.co/WFkk7J7/logo.png"></a></div>
+        <div class="nombre"><h1>OdontoCentro Berlioz</h1></div>
+    </div>
+    <div class="container">
+        <div class="col-g-8 col-m-12">
+            <h2>Contact Us</h2>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="name">Nombre Completo</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="edad">Edad</label>
+                <input type="text" id="edad" name="edad">
+            </div>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="phone">Número de teléfono/celular</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="col-g-6 col-m-6 col-12">
+                <label for="id">Número de Identidad</label>
+                <input type="text" id="id" name="id">
+            </div>
+            <div class="col-g-12 col-m-12 col-12">
+                <label for="message">Motivos de la visita</label>
+                <textarea id="message" name="message" rows=5></textarea>
+            </div>
+            <div class="col-g-12 col-m-12 col-12">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+        <div class="col-g-4 col-m-12 col-12 info">
+           <h3>Para más información</h3>
+           <p><i class="fas fa-map-marker-alt"></i> Colonia El Limba</p>
+           <p><i class="fas fa-phone"></i> (+504) 3378-0262</p>
+           <p><i class="fas fa-envelope-open-text"></i> odontocentroberlioz@gmail.com</p>
+           <p><i class="fab fa-facebook-square"></i> OdontoCentro Berlioz</p>
+           <p><i class="fab fa-instagram"></i> @odontocentroberlioz</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdontoCentro Berlioz</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            transition: all 1s ease;
+        }
+        body{
+            background-color: #89ceff;
+        }
+        .menu a{
+            text-decoration:none;
+            display:inline-block;
+            width:100%;
+            font-size:1.3em;
+            font-weight:bold;
+            color: white;
+        }
+        .menu{
+            background-color: #027BCE;
+            float:left;
+            font-size:1.5em;
+            margin-top:150px;
+            margin-left:20px;
+            width:30%;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .menu a:hover{
+            background-color: white;
+            color: #00487c;
+        }
+        .titulo{
+            background-color: #00487c;
+            width:100%;
+            height: 20vh;
+            padding: 15px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+        .nombre{
+            font-size: 2.2em;
+            width: 80%;
+            display: inline-block;
+        }
+        .logo{
+            width: 10%;
+            height: 100%;
+            display: inline-block;
+        }
+        .titulo img{
+            width: 100%;
+            height: auto;
+        }
+        .aside{
+            float:left;
+            width:63%;
+            background-color: #4BB3FD;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        h1{
+            font-weight:bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;      
+        }
+        h2{
+            font-weight:bold;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;      
+        }
+        p{
+            font-size:1.2em;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        div[class*="div"]{
+            text-align: center;
+            padding:20px;
+            width:100%;
+        }
+        .box{
+            width: 90%;
+            margin: 5%;
+            border: 2px solid white;
+        }
+        .box img{
+            width: 50%;
+            height: auto;
+        }
+        .box a{
+            color: white;
+            text-decoration: none;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        @media only screen and (max-width:432px){
+            h1{
+                font-size:1.1em; 
+            }
+            .menu a{
+                font-size:0.9em;
+                text-align:center; 
+                margin:0;
+            }
+            .menu{
+                margin:0;
+                padding:0;
+                width:100%;
+            }
+            .aside{
+                margin:0;
+                padding:0;
+                width:100%;
+            }
+        }
+        @media only screen and (max-width:768px){
+            h1{
+                font-size:1.1em; 
+            }
+            .logo{
+                display: none;
+            }
+            .menu a{
+                text-align:center; 
+                margin:0;
+            }
+            .menu{
+                margin:0;
+                padding:0;
+                width:100%;
+                margin-top:20px;
+            }
+            .aside{
+                margin:0;
+                padding:0;
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <div class="logo"><a href="index.html"><img src="https://i.ibb.co/WFkk7J7/logo.png"></a></div>
+        <div class="nombre"><h1>OdontoCentro Berlioz</h1></div>
+    </div>
+    <div class="menu">
+        <a href="index.html">&nbsp;&nbsp;&nbsp;Inicio</a>
+        <a href="cita.html">&nbsp;&nbsp;&nbsp;Haga su cita</a>
+    </div>
+    <div class="aside">
+        <div class="div_tratamientos">
+            <h1>Tratamientos</h1>
+            <div class="tratamientos">
+                <div class="box endodoncia">
+                    <h2>Endodoncia</h2>
+                    <img src="https://estudidentalbarcelona.com/wp-content/uploads/2019/11/shutterstock_1405987151.jpg">
+                    <a href="tratamientos.html">Más información...</a>
+                </div>
+                <div class="box implantologia">
+                    <h2>Implantología</h2>
+                    <img src="https://odontologia-us.com/wp-content/uploads/2018/10/implante-dental.jpg" alt="implantologia">
+                    <a href="tratamientos.html">Más información...</a>
+                </div>
+                <div class="box rehabilitacion">
+                    <h2>Rehabilitación</h2>
+                    <img src="https://www.caredentlaspalmas.es/wp-content/uploads/2018/07/plan-rehabiltiacion-oral.jpg" alt="rehabilitacion">
+                    <a href="tratamientos.html">Más información...</a>
+                </div>
+                <div class="box ortodoncia">
+                    <h2>Ortodoncia</h2>
+                    <img src="https://q5g4e3i5.rocketcdn.me/app/uploads/7-fases-ortodoncia-640x300.jpg" alt="ortodoncia">
+                    <a href="tratamientos.html">Más información...</a>
+                </div>
+                <div class="box periodoncia">
+                    <h2>Periodoncia</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxT6OB8U3jLbG0J1uqgSTBdTPGbs88RUN3xBhdMKYs_v9xrfjAYY10YsfkRrz9yuiRWdg&usqp=CAU" alt="periodoncia">
+                    <a href="tratamientos.html">Más información...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
